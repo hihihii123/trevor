@@ -19,7 +19,7 @@ jobs:
               uses: mscoutermarsh/cowsays-action@master
               with:
                 text: 'trevor is maybe'
-                colour: 'purple'
+                color: 'purple'
             - id: so2
               run: cat trevor.py
 
