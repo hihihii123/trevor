@@ -14,6 +14,8 @@ jobs:
             - id: s00 
               run: echo "hi trevor, current time is $(Date)"
             - id: s01
-              run: ls -a
+              run: ls -al
+            - id: so2
+              run: cat trevor.py
               
 
