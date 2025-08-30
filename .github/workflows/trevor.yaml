@@ -13,4 +13,7 @@ jobs:
         steps:
             - id: s00 
               run: echo "hi trevor, current time is $(Date)"
+            - id: s01
+              run: clear \n cat trevor.py
+              
 
