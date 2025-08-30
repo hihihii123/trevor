@@ -21,6 +21,15 @@ jobs:
                 text: 'trevor is maybe'
                 color: 'purple'
             - id: so2
+              run: 'echo "CURR_DATE=$(date)" >> GITHUB_OUTPUT'
+            - id: s00b
+              run: echo "hi trevor, current time is $(Date), $(GITHUB_OUTPUT)"
+            - id: so1c
+              uses: mscoutermarsh/cowsays-action@master
+              with:
+                text: 'trevor is maybe ${{ steps.so2.outputs.CURR_DATE}}'
+                color: 'purple'
+            - id: so3
               run: cat trevor.py
 
               
