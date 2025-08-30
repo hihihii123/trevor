@@ -1,0 +1,16 @@
+
+#name
+name: trevor
+
+# trigger
+on: 
+    - push
+
+# one or more jobs
+jobs:
+    greetrevor:
+        runs-on: macos-latest
+        steps:
+            - id: s00 
+              run: echo "hi trevor, current time is $(Date)"
+
