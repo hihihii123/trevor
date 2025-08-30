@@ -15,7 +15,13 @@ jobs:
               run: echo "hi trevor, current time is $(Date)"
             - id: s01
               run: ls -al
+            - id: so1b
+              uses: mscoutermarsh/cowsays-action@master
+              with:
+                text: 'trevor is maybe'
+                colour: 'purple'
             - id: so2
               run: cat trevor.py
+
               
 
